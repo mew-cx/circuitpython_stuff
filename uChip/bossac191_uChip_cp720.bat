@@ -5,26 +5,26 @@ REM https://github.com/shumatech/BOSSA/releases/tag/1.9.1
 REM https://downloads.circuitpython.org/bin/uchip/en_US/adafruit-circuitpython-uchip-en_US-7.2.0.bin
 REM https://learn.adafruit.com/welcome-to-circuitpython/non-uf2-installation
 
-REM The BOSSAC commandline executable
+REM The BOSSAC commandline executable.
 set BOSSAC="C:\Program Files (x86)\BOSSA\bossac.exe"
 
-REM The CircuitPython .bin image file (_not_ a .uf2 file!)
+REM The CircuitPython .bin image file (_not_ a .uf2 file!).
 set BINFILE="C:\Users\Mike Weiblen\Desktop\adafruit0301\uf2\adafruit-circuitpython-uchip-en_US-7.2.0.bin"
 
-REM The serial port for uChip
+REM The serial port for uChip.  Edit to match your own.
 set PORT="--port=COM5"
 
-REM For M0 boards, which have an 8kB bootloader
+REM For M0 boards, which have an 8kB bootloader.  uChip uses this.
 set OFFSET="--offset=0x2000"
-REM For M4 boards, which have a 16kB bootloader
+REM For M4 boards, which have a 16kB bootloader.
 REM set OFFSET="--offset=0x4000"
 
 echo.
-echo Ensure the uChip is in bootloader mode, and %PORT% is correct
+echo Ensure the uChip is in bootloader mode, and %PORT% is correct.
 pause
 echo.
 
-echo Querying the device, to ensure it is operating properly
+echo Querying the device, to ensure it is operating properly.
 %BOSSAC% %PORT% --info
 
 echo.
@@ -32,8 +32,8 @@ echo Proceed to write?
 pause
 echo.
 
-REM Make it so
-echo Writing to the device
+REM Make it so.
+echo Writing to the device.
 echo.
 set WRITE=--erase --write --verify --reset
 REM set WRITE=--erase --write --verify --debug --reset
