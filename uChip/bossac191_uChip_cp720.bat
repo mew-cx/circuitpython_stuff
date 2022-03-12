@@ -1,9 +1,9 @@
 REM bossac_uChip_cp720 -- mew@mew.cx 2022-03-10
 REM Flash CircuitPython 7.2.0 to Itaca uChip with BOSSAC 1.9.1
 @echo off
-REM https://downloads.circuitpython.org/bin/uchip/en_US/adafruit-circuitpython-uchip-en_US-7.2.0.bin
 REM https://github.com/shumatech/BOSSA/releases/tag/1.9.1
-REM https://learn.adafruit.com/adafruit-feather-m0-express-designed-for-circuit-python-circuitpython/uf2-bootloader-details
+REM https://downloads.circuitpython.org/bin/uchip/en_US/adafruit-circuitpython-uchip-en_US-7.2.0.bin
+REM https://learn.adafruit.com/welcome-to-circuitpython/non-uf2-installation
 
 REM The BOSSAC commandline executable
 set BOSSAC="C:\Program Files (x86)\BOSSA\bossac.exe"
@@ -35,8 +35,8 @@ echo.
 REM Make it so
 echo Writing to the device
 echo.
-REM set WRITE=--erase --write --verify --debug --reset
 set WRITE=--erase --write --verify --reset
+REM set WRITE=--erase --write --verify --debug --reset
 %BOSSAC% %PORT% %OFFSET% %WRITE% %BINFILE%
 
 echo Finished
