@@ -10,6 +10,8 @@ All collected here, as they're too small to merit separate repos.
 ## CircuitPython in general
 - https://circuitpython.org/
 - https://github.com/mew-cx/circuitpython
+- https://github.com/mew-cx/circuitpython-org
+- https://github.com/mew-cx/circuitpython_stuff
 
 ## Sensirion's SPS30 particle sensor
 - https://github.com/kevinjwalters/Adafruit_CircuitPython_SPS30
@@ -23,6 +25,4 @@ All collected here, as they're too small to merit separate repos.
 ## Other WIP
 - https://github.com/mew-cx/CircuitPython_Soundgin
 - https://github.com/mew-cx/CircuitPython_SpeakJet
-
-
 
