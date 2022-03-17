@@ -1,0 +1,12 @@
+# .gitignore
+
+# Don't save CircuitPython .bin files in this repo.
+*.bin
+
+# You shouldn't be using .uf2 with this script anyway!
+*.uf2
+
+# Exclude editor temporary files.
+*~
+
+# vim: set sw=4 ts=8 et ic ai:
