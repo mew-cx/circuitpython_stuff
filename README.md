@@ -4,6 +4,13 @@ My bits'n'bobs for working with [Adafruit's CiruitPython](https://circuitpython.
 All collected here, as they're too small to merit separate repos.
 
 --------------------------
+# Easier CIRCUITPY access on Linux
+Add the following to `/etc/fstab`:
+```
+# allow any user to "mount -L CIRCUITPY" or "mount /mnt/CIRCUITPY":
+LABEL=CIRCUITPY /mnt/CIRCUITPY vfat defaults,noauto,users,noatime,flush,umask=0000 0 0
+```
+--------------------------
 
 # Bookmarks
 
