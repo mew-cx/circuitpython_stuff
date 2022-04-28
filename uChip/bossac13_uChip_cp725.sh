@@ -22,7 +22,7 @@ OFFSET="--offset=0x2000"
 
 echo
 echo "Ensure the uChip is in bootloader mode, and port $PORT is correct."
-pause
+read -p "Press any key to continue . . . "
 echo
 
 echo "Querying the device, to ensure it is operating properly."
@@ -30,7 +30,7 @@ $BOSSAC --port=$PORT --info
 
 echo
 echo "Proceed to write?"
-pause
+read -p "Press any key to continue . . . "
 echo
 
 # Make it so.
@@ -40,6 +40,5 @@ WRITE="--erase --write --verify --reset"
 $BOSSAC --port=$PORT $OFFSET $WRITE $BINFILE
 
 echo Finished
-pause
 
 # eof
