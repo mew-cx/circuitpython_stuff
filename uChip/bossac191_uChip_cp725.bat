@@ -37,7 +37,6 @@ REM Make it so.
 echo Writing to the device.
 echo.
 set WRITE=--erase --write --verify --reset
-REM set WRITE=--erase --write --verify --debug --reset
 %BOSSAC% --port=%PORT% %OFFSET% %WRITE% %BINFILE%
 
 echo Finished
