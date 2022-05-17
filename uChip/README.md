@@ -8,8 +8,12 @@ on the
 [Itaca Innovation](https://shop.itaca-innovation.com/)
 uChip device.
 
+See comments in the script files for specifics.
 
-## Itaca Innovation's uChip board
+---------
+
+Related GitHub projects:
 - https://github.com/ITACAInnovation/uChip
 - https://github.com/mew-cx/uChip_unpacked
 - https://github.com/mew-cx/CircuitPython_uChipPowerManagement
+- https://github.com/shumatech/BOSSA
